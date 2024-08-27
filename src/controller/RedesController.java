@@ -23,6 +23,7 @@ public class RedesController {
 		}
 		
 		try {
+			@SuppressWarnings("deprecation")
 			Process process = Runtime.getRuntime().exec(cmd);
 			Scanner scanner = new Scanner(process.getInputStream());
 			String linha;
